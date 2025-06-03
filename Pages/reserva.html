@@ -1,44 +1,19 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Reservaciones - World Travel</title>
-<link rel="stylesheet" href="../css/reserva.css" />
-</head>
-<body>
-  <header>World Travel</header>
-
-  <div class="container">
-    <div class="left-section" id="paquetes-list">
-      <!-- Paquetes se cargarán aquí dinámicamente -->
+<section class="reserva-container">
+  <h2>Reservaciones</h2>
+  <ul id="carrito-list" class="carrito-list"></ul>
+  <div class="totales">
+    <div>
+      <label>Subtotal</label>
+      <input type="text" id="subtotal" readonly value="0.00" />
     </div>
-
-    <div class="right-section">
-      <h2>Reservaciones</h2>
-      <ul id="carrito-list" class="carrito-list">
-        <!-- Paquetes agregados al carrito -->
-      </ul>
-      <div class="totales">
-        <div class="field-group">
-          <label>Subtotal</label>
-          <input type="text" id="subtotal" readonly value="0.00" />
-        </div>
-        <div class="field-group">
-          <label>IVA (12%)</label>
-          <input type="text" id="iva" readonly value="0.00" />
-        </div>
-        <div class="field-group">
-          <label>Total</label>
-          <input type="text" id="total" readonly value="0.00" />
-        </div>
-      </div>
-      <button id="enviarBtn" disabled>ENVIAR</button>
+    <div>
+      <label>IVA (12%)</label>
+      <input type="text" id="iva" readonly value="0.00" />
+    </div>
+    <div>
+      <label>Total</label>
+      <input type="text" id="total" readonly value="0.00" />
     </div>
   </div>
-
-  <footer>UECBER 2025</footer>
-
-  <script src="../js/reserva.js"></script>
-</body>
-</html>
+  <button id="enviarBtn" disabled>ENVIAR</button>
+</section>

@@ -1,0 +1,154 @@
+:root {
+  --color-primary: rgb(61, 123, 128);
+  --color-secondary: rgb(175, 201, 232);
+  --color-accent: rgb(58, 107, 2);
+  --text-color: #444;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--color-secondary);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  max-width: 1200px;
+  margin: 20px auto 30px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(61, 123, 128, 0.3);
+}
+
+.hero img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.intro {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.intro h2 {
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.intro-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.intro-content img {
+  width: 300px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(61, 123, 128, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.intro-content img:hover {
+  transform: scale(1.05);
+}
+
+.intro-content p {
+  max-width: 600px;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.destinos {
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.destinos h3 {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.destinos-grid {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.destino-item {
+  width: 220px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.destino-item:hover {
+  transform: scale(1.05);
+}
+
+.destino-item img {
+  width: 100%;
+  height: 140px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(61, 123, 128, 0.25);
+}
+
+.caption {
+  margin-top: 10px;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+footer {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  text-align: center;
+  font-weight: bold;
+  padding: 15px 0;
+  border-top: 1px solid var(--color-primary);
+  margin-top: auto;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .intro-content {
+    flex-direction: column;
+  }
+
+  .intro-content img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .destinos-grid {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .destino-item {
+    width: 90%;
+  }
+}
