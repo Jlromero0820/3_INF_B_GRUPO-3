@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>World Travel</title>
+  <link rel="stylesheet" href="destinos.css">
+</head>
+<body>
+
+  <div class="nav-bar">☰ https://worldtravel.com</div>
+
+  <header>
+    <h1>DESTINOS</h1>
+  </header>
+
+  <div class="destinos">
+    <div class="destino">
+      <div class="imagen">[Imagen]</div>
+      <div class="texto">Texto</div>
+      <div class="descripcion">Descripción breve del destino.</div>
+    </div>
+    <div class="destino">
+      <div class="imagen">[Imagen]</div>
+      <div class="texto">Texto</div>
+      <div class="descripcion">Descripción breve del destino.</div>
+    </div>
+    <div class="destino">
+      <div class="imagen">[Imagen]</div>
+      <div class="texto">Texto</div>
+      <div class="descripcion">Descripción breve del destino.</div>
+    </div>
+    <div class="destino">
+      <div class="imagen">[Imagen]</div>
+      <div class="texto">Texto</div>
+      <div class="descripcion">Descripción breve del destino.</div>
+    </div>
+    <div class="destino">
+      <div class="imagen">[Imagen]</div>
+      <div class="texto">Texto</div>
+      <div class="descripcion">Descripción breve del destino.</div>
+    </div>
+    <div class="destino">
+      <div class="imagen">[Imagen]</div>
+      <div class="texto">Texto</div>
+      <div class="descripcion">Descripción breve del destino.</div>
+    </div>
+  </div>
+
+  <footer>UECBER 2025</footer>
+
+</body>
+</html>
