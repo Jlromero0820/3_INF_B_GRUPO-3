@@ -17,6 +17,7 @@ body, html {
   flex-direction: column;
 }
 
+/* Encabezado principal */
 .hero {
   max-width: 1200px;
   margin: 20px auto 30px;
@@ -32,29 +33,33 @@ body, html {
   display: block;
 }
 
-.intro {
+/* Título central */
+.titulo {
   max-width: 1200px;
   margin: 0 auto 40px;
   padding: 0 20px;
   text-align: center;
 }
 
-.intro h2 {
+.titulo h1 {
   font-weight: 700;
   color: var(--color-primary);
   margin-bottom: 25px;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
-.intro-content {
+.aventura {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
 }
 
-.intro-content img {
+.aventura img {
   width: 300px;
   height: 180px;
   object-fit: cover;
@@ -63,11 +68,11 @@ body, html {
   transition: transform 0.3s ease;
 }
 
-.intro-content img:hover {
+.aventura img:hover {
   transform: scale(1.05);
 }
 
-.intro-content p {
+.aventura p {
   max-width: 600px;
   font-style: italic;
   font-size: 1.1rem;
@@ -75,38 +80,39 @@ body, html {
   color: var(--text-color);
 }
 
-.destinos {
+/* Categorías de destinos */
+.categorias {
   max-width: 1200px;
   margin: 0 auto 50px;
   padding: 0 20px;
   text-align: center;
 }
 
-.destinos h3 {
+.categorias h2 {
   font-size: 1.8rem;
   color: var(--color-primary);
   margin-bottom: 30px;
   font-weight: 600;
 }
 
-.destinos-grid {
+.tipos {
   display: flex;
   justify-content: center;
   gap: 35px;
   flex-wrap: wrap;
 }
 
-.destino-item {
+.tarjeta {
   width: 220px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
-.destino-item:hover {
+.tarjeta:hover {
   transform: scale(1.05);
 }
 
-.destino-item img {
+.tarjeta img {
   width: 100%;
   height: 140px;
   border-radius: 12px;
@@ -114,12 +120,13 @@ body, html {
   box-shadow: 0 0 10px rgba(61, 123, 128, 0.25);
 }
 
-.caption {
+.tarjeta p {
   margin-top: 10px;
   font-weight: 600;
   color: var(--color-accent);
 }
 
+/* Pie de página */
 footer {
   background-color: var(--color-secondary);
   color: var(--color-primary);
@@ -133,22 +140,22 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .intro-content {
+  .aventura {
     flex-direction: column;
   }
 
-  .intro-content img {
+  .aventura img {
     width: 90%;
     height: auto;
     margin-bottom: 20px;
   }
 
-  .destinos-grid {
+  .tipos {
     flex-direction: column;
     gap: 25px;
   }
 
-  .destino-item {
+  .tarjeta {
     width: 90%;
   }
 }
