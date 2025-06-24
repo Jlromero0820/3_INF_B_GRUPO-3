@@ -1,58 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>World Travel - Menú Dinámico</title>
-<style>
-  body, html {
-    margin: 0; padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: rgb(175, 201, 232);
-  }
-  header {
-    background-color: rgb(61, 123, 128);
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 1.8rem;
-    font-weight: bold;
-  }
-  nav {
-    background-color: white;
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    border-bottom: 3px solid rgb(61, 123, 128);
-  }
-  nav button {
-    background-color: rgb(61, 123, 128);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: 700;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  nav button:hover {
-    background-color: rgb(58, 107, 2);
-  }
-  nav button.active {
-    background-color: rgb(58, 107, 2);
-  }
-  #content-area {
-    max-width: 1200px;
-    margin: 20px auto;
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 12px rgba(61,123,128,0.3);
-    min-height: 500px;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>World Travel - Menú Dinámico</title>
+  <style>
+    /* Reset de márgenes y padding */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f7f6;
+      color: #333;
+    }
+
+    /* Encabezado principal */
+    header {
+      background-color: #3d7b80;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 2rem;
+      font-weight: 700;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Barra de navegación */
+    nav {
+      background-color: white;
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      border-bottom: 2px solid #3d7b80;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav button {
+      background-color: #3d7b80;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    nav button:hover {
+      background-color: #2e5c4b;
+      transform: scale(1.05);
+    }
+
+    nav button.active {
+      background-color: #2e5c4b;
+    }
+
+    /* Contenedor principal del contenido */
+    #content-area {
+      max-width: 1200px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(61, 123, 128, 0.3);
+      min-height: 500px;
+    }
+
+    /* Estilos adicionales */
+    section h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #3d7b80;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
 
