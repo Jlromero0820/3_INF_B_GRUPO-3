@@ -2,40 +2,27 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #AFC9E8; /* Spindle */
-  color: #3A6B02; /* Verdun Green */
+  background-color: #AFC9E8;
+  color: #3A6B02;
   line-height: 1.6;
 }
 
-/* Barra de navegación */
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background-color: #3D7B80; /* Oracle */
-  color: #F0F4F8;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  font-weight: 600;
-  font-size: 1.1rem;
-}
 
-/* Encabezado */
+
 header {
-  text-align: center;
-  padding: 40px 20px 30px;
-  background-color: #F0F4F8;
-  color: #3A6B02;
-  border-bottom: 3px solid #3D7B80;
-  font-size: 1.8rem;
-  font-weight: 700;
-  letter-spacing: 1.2px;
+    background-color: #3d7b80;
+    color: #ffffff;
+    max-width: 10000px;
+    text-align: center;
+    padding: 0.5px;
+    font-size: 1rem;
+    font-weight: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Contenedor flexible para destinos */
-.destinos {
+.destinos /*acomoda todo dentro del recuadro*/ {
   display: flex;
-  flex-wrap: wrap; /* permite que los items pasen a la siguiente línea */
+  flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
   padding: 40px 30px;
@@ -43,45 +30,46 @@ header {
   margin: 0 auto;
 }
 
-/* Cada destino (tarjeta) */
 .destino {
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(58,107,2,0.15);
   padding: 20px;
-  width: 280px; /* ancho fijo para tarjetas */
+  width: 280px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.destino:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(58,107,2,0.3);
+.destino:hover /*hace q cada marco flote al pasar el mouse*/ {
+  transform: translateY(-8px);/*mueve hacia arriba el marco de 8 pixeles*/
+  box-shadow: 0 12px 25px rgba(58,107,2,0.3); /*crea una sombra cuando el recuadro se eleva*/
 }
 
-/* Imagen simulada */
 .imagen {
   height: 160px;
-  background-color: #3D7B80; /* Oracle */
+  background-color: #3D7B80;
   border-radius: 8px;
   margin-bottom: 15px;
 }
 
-/* Texto principal del destino */
 .texto {
   font-weight: 700;
   margin-bottom: 8px;
   font-size: 1.2rem;
-  color: #3A6B02; /* Verdun Green */
+  color: #3A6B02;
 }
 
-/* Descripción */
-.descripcion {
-  font-size: 0.95rem;
-  color: #536B4A;
+.ubicacion {
+  font-size: 1;
+  color: #3D7B80;
   line-height: 1.4;
 }
 
-/* Pie de página */
+.descripcion {
+  font-size: 0.95rem;
+  color: #000000;
+  line-height: 1.4;
+}
+
 footer {
   text-align: center;
   padding: 20px 10px;
